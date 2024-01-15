@@ -1,17 +1,15 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import UserInput from "./components/UserInput";
-import BattleGround from "./pages/BattleGround";
+import SearchUser from "./pages/SearchUser";
+import Winner from "./pages/Winner";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/userInput" element={<UserInput />} />
-      <Route path="/userInput/battleground" element={<BattleGround />} />
-      <Route path="/userInput/battleground/winner" element={<BattleGround />} />
-
+      <Route path="/searchUser" element={<SearchUser />} />
+      <Route path="/searchUser/winner" element={<Winner />} />
     </Routes>
   );
 }
